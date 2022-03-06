@@ -11,7 +11,7 @@ namespace LabWpfApp14
 {
     class Converter : IValueConverter
     {
-        public object Converter(object value, Type targetType, object parameter, CultureInfo culture)
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             if ((ProductCategorys)value == ProductCategorys.Food)
             {
@@ -19,11 +19,12 @@ namespace LabWpfApp14
             }
             return "Бытовая техника";
         }
+
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
             return DependencyProperty.UnsetValue;
         }
-
-        
+              
     }
 }
+ 

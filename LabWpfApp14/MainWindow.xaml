@@ -25,7 +25,7 @@
                     <TextBlock Grid.Row="0" Grid.Column="1" Text="Название товара:"/>
                     <TextBlock Grid.Row="0" Grid.Column="2" Text="{Binding Path=ProdName}"/>
                     <TextBlock Grid.Row="1" Grid.Column="1" Text="Цена:"/>
-                    <TextBlock Grid.Row="0" Grid.Column="2" Text="{Binding Path=ProdPrice}"/>
+                    <TextBlock Grid.Row="1" Grid.Column="2" Text="{Binding Path=ProdPrice}"/>
                     <TextBlock Grid.Row="2" Grid.Column="1" Text="Категория товара:"/>
                     <TextBlock Grid.Row="2" Grid.Column="2" Text="{Binding Path=ProductCategory, Converter={StaticResource converter}}"/>
                 </Grid>
@@ -35,8 +35,9 @@
                     <DataTrigger.Value>
                         <local:ProductCategorys>Food</local:ProductCategorys>
                     </DataTrigger.Value>
+                    <Setter TargetName="border" Property="Background" Value="White"/>
                 </DataTrigger>
-            </DataTemplate.Triggers>
+            </DataTemplate.Triggers> 
         </DataTemplate>
     </Window.Resources>
     <StackPanel>

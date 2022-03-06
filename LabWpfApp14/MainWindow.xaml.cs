@@ -21,9 +21,7 @@ namespace LabWpfApp14
     /// </summary>
     public partial class MainWindow : Window
     {
-        private object products;
-        private object listBox;
-
+        public ObservableCollection<Product> products;
         public MainWindow()
         {
             InitializeComponent();

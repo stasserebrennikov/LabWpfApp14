@@ -14,8 +14,8 @@ namespace LabWpfApp14
     public class Product
     {
         public string ProdName { get; set; }
-        public string ProdPrice { get; set; }
+        public decimal ProdPrice { get; set; }
         public string ProdImage { get; set; }
-        public ProductCategorys ProductCategory { get; set; }
+        public ProductCategorys ProductCategory {get; set;}
     }
 }
